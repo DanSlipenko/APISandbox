@@ -1,0 +1,23 @@
+{
+  "name": "APISandbox-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micahwaweru/APISandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "bugs": {
+    "url": "https://github.com/micahwaweru/APISandbox/issues"
+  },
+  "homepage": "https://github.com/micahwaweru/APISandbox#readme"
+}
