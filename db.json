@@ -1,1 +1,1 @@
-[{"title":"Hello World","text":"Welcome to the note taking app!"},{"title":"Test","text":"does this text work?"},{"title":"Something New","text":"new note test"},{"title":"Fourth Note","text":"fourth note text"},{"title":"Here's my title","text":"This is my text","id":5},{"title":"First one","text":"This is my text"},{"title":"From CMS","text":"This is more of my text"}]
+[{"title":"Seed Note","text":"Seed file has been run","id":1},{"title":"Note 2","text":"Second note","id":2},{"title":"Note 3","text":"Third note","id":3},{"title":"Note 4","text":"fourth note","id":4}]
