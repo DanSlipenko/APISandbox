@@ -71,15 +71,15 @@ app.put('/updateNote/:id',(req,res)=>{
         console.log(dbData[noteId])
         var noteSel = dbData[noteId];
         noteSel.text = req.body.text;
+        
         //Write updated text to the db.json file
         console.log('Updated note: ' + noteSel.text)
         console.log(dbData[noteId]);
         stringData = JSON.stringify(dbData)
         fs.writeFile('db.json',stringData,(err)=>{
-            if(err)throwerr;
+            if(err)throw err;
         })
     });
-
     res.send('Update Route hit successfully')
 })
 
