@@ -15,7 +15,7 @@ var viewNotes = function(){
             'Content-Type': 'application/json'
         }
     })
-    axios.
+    //axios.
     .then(
         function(response){
             response.json().then(function(data){
