@@ -19,7 +19,6 @@ submit.addEventListener('click',function(event){
     xhr.send(JSON.stringify({
         title: titleVal,
         text: textVale
+        
 }));
-
-
 })
