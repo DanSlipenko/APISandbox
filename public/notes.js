@@ -1,7 +1,7 @@
 
 
 console.log('script attached')
-//const axios = require('axios');
+const axios = require('axios');
 
 const homeBtn = document.getElementById('homeBtn');
 
@@ -9,8 +9,7 @@ var theUrl='/viewNotes';
 
 var viewNotes = function(){
     
-    fetch('/viewNotes',{
-        "method":"GET",
+    axios.get('/viewNotes',{
         "headers":{
             'Content-Type': 'application/json'
         }
@@ -51,11 +50,6 @@ var viewNotes = function(){
                     editBtn.innerText = "Edit" 
                     delBtn.innerText = "Delete" 
                     listItem.innerHTML=note;
-<<<<<<< HEAD
-                    listItem.appendChild(editBtn)
-                    listItem.appendChild(delBtn)
-                    document.getElementById('myList').appendChild(listItem);
-=======
                     listItem.appendChild(editBtn);
 
                     document.getElementById('myList').appendChild(listItem);
@@ -75,7 +69,6 @@ var viewNotes = function(){
                         })
                     })
                 }
->>>>>>> 809f15fdaf82d1af98754955de837ca16f7b1f34
 
                     editBtn.addEventListener('click',function(event){
                         var selNote = event.target.id;
@@ -108,11 +101,8 @@ var viewNotes = function(){
                             .then(console.log('Delete succesfull'))
                         }    
                         deleteFun();                    
-                    })
-
-                    
-                }
-            })
+                    }) 
+                })
         }
     )
     .catch(function(err){
